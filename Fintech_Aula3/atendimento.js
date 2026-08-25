@@ -7,15 +7,23 @@ do {
     console.log("Fila de clientes: " + fila);
 
     console.log("Atendendo o primeiro cliente...");
-        function atendeCliente(cliente){
+    
+    function atendeCliente(cliente){
         console.log('Atendendo cliente: ' +cliente)
     }
+    atendeCliente(fila[0]);
+    fila.shift();
     
-    let nome = fila.shift();
-
-    console.log("Cliente atendido: " + nome);
-    console.log("Fila de clientes: " + fila);
-
+    function lerFila(fila) {
+        console.log('Fila atual: ' +fila);
+        if (fila.length == 0) {
+            console.log('Lista vazia');
+        
+        } else {
+            
+        }
+    }
+    lerFila(fila);
     i++;
 } while (i <= tamanhoFila);
 
