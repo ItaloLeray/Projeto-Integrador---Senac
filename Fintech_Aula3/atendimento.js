@@ -19,8 +19,6 @@ do {
         if (fila.length == 0) {
             console.log('Lista vazia');
         
-        } else {
-            
         }
     }
     lerFila(fila);
