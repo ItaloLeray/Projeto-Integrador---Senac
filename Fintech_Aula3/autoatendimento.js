@@ -1,3 +1,5 @@
+let saldo = 1000;
+
 const diaDoMes = () => new Date().getDate();
 console.log(diaDoMes());
 
@@ -19,5 +21,10 @@ const saudacao = () => {
 };
 
 console.log(saudacao());
+
+let valor = Number(prompt("Digite o valor que deseja sacar:"));
+console.log("Valor digitado: " + valor);
+let saque = (saldo-valor);
+console.log("Saldo após o saque: " + saque);
 
 document.getElementById("saudacao").textContent = saudacao();
