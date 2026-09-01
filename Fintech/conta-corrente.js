@@ -13,7 +13,7 @@ export class ContaCorrente {
     //Métodos ou funções - Ações da classe
 
     consultarSaldo() {
-        console.log("Saldo atual: R$ " + this.saldo);
+        console.log("Saldo de: " + this.nomeCliente + " R$ " + this.saldo);
     }
 
 
