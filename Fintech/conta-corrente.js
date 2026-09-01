@@ -15,6 +15,9 @@ export class ContaCorrente {
     consultarSaldo() {
         console.log("Saldo de: " + this.nomeCliente + " R$ " + this.saldo);
     }
+    depositar(valor){
+        this.saldo += valor
+    }
 
 
 }
