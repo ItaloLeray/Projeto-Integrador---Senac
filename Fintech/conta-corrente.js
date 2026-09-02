@@ -15,7 +15,7 @@ export class ContaCorrente {
     consultarSaldo() {
         console.log("Saldo de: " + this.nomeCliente + " R$ " + this.saldo);
     }
-    depositar(valor){
+    depositar(valorDeposito) {
         
 
         if (valorDeposito < 0) {
