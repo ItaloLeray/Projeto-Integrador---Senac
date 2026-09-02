@@ -16,7 +16,17 @@ export class ContaCorrente {
         console.log("Saldo de: " + this.nomeCliente + " R$ " + this.saldo);
     }
     depositar(valor){
-        this.saldo += valor
+        
+
+        if (valor < 0) {
+            console.log("Valor inválido, por favor insira um valor positivo!")
+        } else {
+            this.saldo += valor
+            console.log("Valor depositado com sucesso!")
+        }
+    }
+    sacar (valorSaque) {
+        this.saldo -= valorSaque
     }
 
 
